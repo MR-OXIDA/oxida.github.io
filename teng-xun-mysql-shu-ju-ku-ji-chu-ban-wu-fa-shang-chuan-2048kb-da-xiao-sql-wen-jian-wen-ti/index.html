@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+<title>腾讯Mysql数据库基础版无法上传2048kb大小sql文件问题 - 氧化先生的个人博客</title>
+<meta name="description" content="道可道 非常道 名可名 非常名">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link type='text/css' rel='stylesheet' href='https://blog.oxida.cn/styles/main.css' media='screen' />
+<link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css">
+<link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script type="text/javascript" src='https://blog.oxida.cn/media/scripts/jquery.js'></script>
+<script type="text/javascript" src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
+
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+</head>
+
+<body>
+  <div class="layout theme-dark">
+    <div class="layout-header">
+
+	<div class="layout-header-main">
+		<div class="container">
+			<div class="row justify-content-lg-center">
+				<div class="col-12 col-lg-9">
+
+					<div class="navbar">
+
+						<div class="logo">
+							<a href="https://blog.oxida.cn">
+								<img class="logo"
+									src="https://blog.oxida.cn/media/images/site_avatar.png?v=1590251925629"
+									alt="">
+							</a>
+						</div>
+
+						<div class="menu d-md-inline-block d-none">
+							<ul class="layout-navigation-list">
+								
+								<li class="layout-navigation-item"><a title="首页"
+										href="/">首页</a>
+								</li>
+								
+								<li class="layout-navigation-item"><a title="笔记"
+										href="https://blog.oxida.cn/archives">笔记</a>
+								</li>
+								
+								<li class="layout-navigation-item"><a title="摄影圈"
+										href="https://7mx.com/oxida">摄影圈</a>
+								</li>
+								
+								<li class="layout-navigation-item"><a title="个人云盘"
+										href="https://cloud.z2er.com/">个人云盘</a>
+								</li>
+								
+								<li class="layout-navigation-item"><a title="归档"
+										href="/archives">归档</a>
+								</li>
+								
+								<li class="layout-navigation-item"><a title="关于"
+										href="/post/about">关于</a>
+								</li>
+								
+							</ul>
+						</div>
+
+						<div class="item d-md-inline-block d-none">
+							<div class="search-icon">
+								<i class="fa fa-search" aria-hidden="true"></i>
+							</div>
+						</div>
+
+
+
+						<div class="d-md-inline-block d-none">
+							<div class="search-lightbox">
+								<div class="search-body">
+
+									<form id="gridea-search-form" data-update="1590251925629" action="/search/" class="search-form">
+										<input type="text" name="q" id="s" value="" class="search-field" placeholder="请输入搜索关键词" aria-label="请输入搜索关键词" required="">
+										<button type="submit" class="submit" aria-label="Submit">
+											<i class="fa fa-search" aria-hidden="true"></i>
+										</button>
+									</form>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="nav d-md-none d-inline-block">
+							<div class="trigger">
+								<i class="fa fa-bars layout-btn-toggle" aria-hidden="true"></i>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+
+
+
+		</div>
+	</div>
+
+</div>
+    <div class="layout-collapse d-md-none">
+	<div class="layout-collapse-main">
+		<ul class="layout-collapse-list">
+			
+			<li class="layout-collapse-item"><a title="首页" href="/">首页</a></li>
+			
+			<li class="layout-collapse-item"><a title="笔记" href="https://blog.oxida.cn/archives">笔记</a></li>
+			
+			<li class="layout-collapse-item"><a title="摄影圈" href="https://7mx.com/oxida">摄影圈</a></li>
+			
+			<li class="layout-collapse-item"><a title="个人云盘" href="https://cloud.z2er.com/">个人云盘</a></li>
+			
+			<li class="layout-collapse-item"><a title="归档" href="/archives">归档</a></li>
+			
+			<li class="layout-collapse-item"><a title="关于" href="/post/about">关于</a></li>
+			
+
+		</ul>
+	</div>
+</div>
+
+    <div class="layout-content">
+      <div class="layout-content-main">
+        <div class="container">
+          <div class="row justify-content-lg-center">
+            <div class="col-12 col-lg-9">
+              <div class="layout-post">
+                <div class="layout-post-body">
+                  <div class="row">
+
+                    <div class="col-12 col-lg-10">
+                      <div class="layout-post-main m-right m-md-right">
+                        <div class="layout-post-header">
+                          <h1 class="layout-post-title">腾讯Mysql数据库基础版无法上传2048kb大小sql文件问题</h1>
+                          <div class="layout-post-meta">
+                            <div class="item">
+                               <a href="https://blog.oxida.cn/sLBgX7rvm/" class="post--keyword"
+                                data-title="腾讯云" data-type="post_tag" data-term-id="39">腾讯云</a>
+                              
+                            </div>
+                            <div class="item">
+                              <span>2018-03-15</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="layout-post-content">
+                          <div class="layout-post-item">
+                            
+                            <p><strong>产品类型</strong>：腾讯云Mysql数据库基础版</p>
+<p><strong>问题</strong>：</p>
+<p>1.phpmyadmin后台上传数据库文件不支持大于2M的文件。</p>
+<p>2.因为数据库是基础版本无法使用控制台的导入功能</p>
+<p>3.因为数据库是基础版本无法使用数据迁移，数据迁移不支持基础版本</p>
+<p><strong>解决办法：</strong></p>
+<p>可以使用以下命令进行上传或者备份：</p>
+<pre><code>备份：mysqldump -h IP -P Port -u root -p dbname &gt; XXX.sql
+恢复：mysql -h IP -P Port -u root -p dbname &lt; XXX.sql
+</code></pre>
+
+                          </div>
+                        </div>
+                        <div class="layout-post-social">
+                          <div class="item reader">
+                            <div id="/post/teng-xun-mysql-shu-ju-ku-ji-chu-ban-wu-fa-shang-chuan-2048kb-da-xiao-sql-wen-jian-wen-ti/" class="leancloud-visitors view"
+                              data-flag-title="腾讯Mysql数据库基础版无法上传2048kb大小sql文件问题">
+                              <span class="post-meta-item-text">阅读 </span>
+                              <span class="leancloud-visitors-count"></span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="layout-post-navigation">
+                          <div class="navigation-list">
+                            
+                            <div class="post-card row">
+                              
+                              <div class="card-content col-12">
+                                <div class="card-body">
+                                  <div class="header">
+                                    <a href="https://blog.oxida.cn/e-han-wen/" class="title">
+                                      <h4>鹅厂问与答语录🐧</h4>
+                                    </a>
+                                  </div>
+                                  <div class="inner">
+                                    <div class="abstract">
+                                      <p>问：那个瞬间让你觉得自己还是个元气满满的年轻人？<br>
+答：看见美女的时候</p>
+<p>问：在公司打印了大量个人文件，想付款，怎么付款？<br>
+答：收你的钱的话，就超经营范围了</p>
+<p>问：米脂事件会成为共公司游戏的新公关危机吗？<br>
+答：郭德纲说，电影里那杀人了你知道是假的，一男一女被窝里亲热你知道是假的，怎么到相声里这就成真了，听场相声你就学坏了。</p>
+<p>问：那些逻辑混乱的毕业生产品经理是怎么招进来的？<br>
+答：因为好看啊～</p>
+<p>问：传说中我厂很多优质的单身小哥哥，可是我怎么入职一年多了都没有遇到？身边都是已婚或者有女票的，按人口分配也该分配到我了吧？<br>
+答：题主你名的结果是，把一次重新分配的机会让给了我们这些实名的人。</p>
+<p>问：读了这么多年的书，为什么还过的如此艰辛？<br>
+答：北上广容不下你的身体，三四线可能放不下你的灵魂。</p>
+<p>问：和我一样的月光的鹅</p>
+
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card-footer">
+                                  <div class="item"><span>上一篇</span></div>
+                                  <div class="item">2018-10-26</div>
+                                </div>
+                              </div>
+                              
+                            </div>
+
+                            <div class="post-card row">
+                              
+                              <div class="card-content col-12">
+                                <div class="card-body">
+                                  <div class="header">
+                                    <a href="https://blog.oxida.cn/rails-51-zhong-form_withform_tagform_for-de-san-zhe-qu-bie/" class="title">
+                                      <h4>Rails 5.1中form_with,form_tag,form_for的三者区别</h4>
+                                    </a>
+                                  </div>
+                                  <div class="inner">
+                                    <div class="abstract">
+                                      
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card-footer">
+                                  <div class="item"><span>下一篇</span></div>
+                                  <div class="item">2018-01-07</div>
+                                </div>
+                              </div>
+                              
+                            </div>
+
+                            
+                          </div>
+                        </div>
+
+                        <div class="layout-comments"></div>
+                        
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-lg-2 d-none d-lg-block">
+                      <div class="layout-post-sidebar">
+                        <div class="layout-sidebar-item">
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="layout-totop d-none"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+
+    	<div class="layout-footer">
+
+		<div class="container">
+			<div class="row justify-content-lg-center">
+				<div class="col-12 col-lg-9">
+					<div class="footer">
+						<div class="row">
+							<div class="col-12 col-md-9">
+								<div class="footer-copy">
+									
+									Powered by <a href="https://blog.oxida.cn" target="_blank">氧化先生</a>
+									<div class="footer-icp d-none d-sm-inline-block">
+										<span class="px-2">⋅</span>
+										
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3 d-none d-md-block">
+								<div class="footer-links">
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src='https://blog.oxida.cn/media/scripts/main.js'></script>
+	
+
+  </div>
+</body>
+
+</html>

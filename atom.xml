@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://blog.oxida.cn</id>
+    <title>氧化先生的个人博客</title>
+    <updated>2020-05-23T16:39:07.832Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://blog.oxida.cn"/>
+    <link rel="self" href="https://blog.oxida.cn/atom.xml"/>
+    <subtitle>道可道 非常道 名可名 非常名</subtitle>
+    <logo>https://blog.oxida.cn/images/avatar.png</logo>
+    <icon>https://blog.oxida.cn/favicon.ico</icon>
+    <rights>All rights reserved 2020, 氧化先生的个人博客</rights>
+    <entry>
+        <title type="html"><![CDATA[免费上云 《薅尽腾讯云羊毛》系列之证书监控 SSLPod]]></title>
+        <id>https://blog.oxida.cn/rX8SBuFD/</id>
+        <link href="https://blog.oxida.cn/rX8SBuFD/">
+        </link>
+        <updated>2020-05-23T16:32:19.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="简介">简介</h1>
+<h2 id="什么是腾讯云证书监控-sslpod">什么是腾讯云证书监控 SSLPod？</h2>
+<p>腾讯云证书监控是一款集多个 HTTPS 站点安全检测、证书有效期管理以及异常告警等功能于一体的系统。它提供了可视化评级图表和可交互的跨品牌证书管理仪表盘，能够及时地将异常情况通过邮件、微信、短信进行告警通知。并根据评测结果，给出改造建议。<br>
+您可以根据需要选择我们的套餐：免费版、专业版和旗舰版，其中专业版和旗舰版为付费套餐，为您提供更多的监控额度和服务。</p>
+<blockquote>
+<p>嗯，这个是腾讯云官方的简介，看重点，提供<code>免费版本</code>，所以，开整！</p>
+</blockquote>
+<h1 id="操作流程">操作流程：</h1>
+<p>1.登录<a href="https://console.cloud.tencent.com/">腾讯云</a>，进入腾讯云<a href="https://buy.cloud.tencent.com/sslpod">证书监控 SSLPod 购买页</a>。选择【企业免费版】，点击【免费试用】。如下图：</p>
+<figure data-type="image" tabindex="1"><img src="https://blog.oxida.cn/post-images/1590248512906.png" alt="" loading="lazy"></figure>
+<p>2.跳转到证书监控 SSLPod 监控管理管理页，点击【添加监控项目】。</p>
+<figure data-type="image" tabindex="2"><img src="https://blog.oxida.cn/post-images/1590248661386.png" alt="" loading="lazy"></figure>
+<p>3.添加你需要监控的站点。</p>
+<figure data-type="image" tabindex="3"><img src="https://blog.oxida.cn/post-images/1590248779691.png" alt="" loading="lazy"></figure>
+<h2 id="填写项介绍">填写项介绍</h2>
+<p><strong>域名</strong>：你需要监控的域名地址。</p>
+<h3 id="监控类型">监控类型：</h3>
+<p><strong>HTTPS</strong>：HTTPS （全称：Hyper Text Transfer Protocol over SecureSocket Layer），是以安全为目标的 HTTP 通道，在HTTP的基础上通过传输加密和身份认证保证了传输过程的安全性 。一般来说，需要监控网站，都选择此项。（注意：需要你的网站上已经部署了SSL证书）<br>
+<strong>SMTP</strong>：邮件传输协议。监控邮件用的。<br>
+<strong>IMAP</strong>：信息访问协议，也是邮件。<br>
+<strong>POP3</strong>:邮局协议版本3”，还是邮件。<br>
+<strong>TLS</strong>：传输层安全性协议，一般用来监控应用程序。</p>
+<p>所以，这里一般来说，如果需要监控网站的话，无脑选择https就行了。</p>
+<p><strong>端口</strong>：默认443端口，因为网站https走的就是443端口。http是80端口。</p>
+<p><strong>IP</strong>：选择你的网站服务器的IP地址，没找到的话，选择自动获取，然后选择。</p>
+<p><strong>标签</strong>：防呆设计，不用管。<br>
+<strong>监控</strong>：点开，开关你都不开，怎么用？</p>
+<p>填写完成后，点击确认即可。</p>
+<p><strong>效果</strong>：<br>
+<img src="https://blog.oxida.cn/post-images/1590249722173.png" alt="" loading="lazy"></p>
+<p>完美，你还可以查看你证书的相关报告和评级，如果没有的话，点击重新检测，刷一下浏览器即可。</p>
+<figure data-type="image" tabindex="4"><img src="https://blog.oxida.cn/post-images/1590249885010.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="5"><img src="https://blog.oxida.cn/post-images/1590249894809.png" alt="" loading="lazy"></figure>
+<p>香炸，Ok，教程到此结束。免费版本每月提供30次通知告警，可以监控20个域名，不过监控频率这点上有点尴尬，1小时检测一次。不过相对来说，个人使用的话，完全足够了。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[中文文案排版指北]]></title>
+        <id>https://blog.oxida.cn/eYbIeOhNo/</id>
+        <link href="https://blog.oxida.cn/eYbIeOhNo/">
+        </link>
+        <updated>2020-05-17T09:24:02.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="空格">空格</h3>
+<p>「有研究显示，打字的时候不喜欢在中文和英文之间加空格的人，感情路都走得很辛苦，有七成的比例会在 34 岁的时候跟自己不爱的人结婚，而其余三成的人最后只能把遗产留给自己的猫。毕竟爱情跟书写都需要适时地留白。</p>
+<p>与大家共勉之。」——<a href="https://github.com/vinta/pangu.js">vinta/paranoid-auto-spacing</a></p>
+<h4 id="中英文之间需要增加空格">中英文之间需要增加空格</h4>
+<p><strong>正确</strong>：</p>
+<blockquote>
+<p>在 <code>LeanCloud</code> 上，数据存储是围绕 <code>AVObject</code> 进行的。</p>
+</blockquote>
+<p><strong>错误</strong>：</p>
+<blockquote>
+<p>在<code>LeanCloud</code>上，数据存储是围绕<code>AVObject</code>进行的。</p>
+</blockquote>
+<blockquote>
+<p>在 <code>LeanCloud</code>上，数据存储是围绕<code>AVObject</code> 进行的。</p>
+</blockquote>
+<p><strong>完整的正确用法</strong>：</p>
+<blockquote>
+<p>在 <code>LeanCloud</code> 上，数据存储是围绕 <code>AVObject</code> 进行的。每个 <code>AVObject</code> 都包含了与 <code>JSON</code> 兼容的 <code>key-value</code> 对应的数据。数据是 <code>schema-free</code> 的，你不需要在每个 <code>AVObject</code> 上提前指定存在哪些键，只要直接设定对应的 <code>key-value</code> 即可。</p>
+</blockquote>
+<p>例外：「豆瓣FM」等产品名词，按照官方所定义的格式书写。</p>
+<h4 id="中文与数字之间需要增加空格">中文与数字之间需要增加空格</h4>
+<p><strong>正确</strong>：</p>
+<blockquote>
+<p>今天出去买菜花了 5000 元。</p>
+</blockquote>
+<p><strong>错误</strong>：</p>
+<blockquote>
+<p>今天出去买菜花了 5000元。</p>
+</blockquote>
+<blockquote>
+<p>今天出去买菜花了5000元。</p>
+</blockquote>
+<h4 id="数字与单位之间无需增加空格">数字与单位之间无需增加空格</h4>
+<p><strong>正确</strong>：</p>
+<blockquote>
+<p>我家的光纤入户宽带有 10Gbps，SSD 一共有 10TB。</p>
+</blockquote>
+<p><strong>错误</strong>：</p>
+<blockquote>
+<p>我家的光纤入户宽带有 10 Gbps，SSD 一共有 20 TB。</p>
+</blockquote>
+<p>另外，度／百分比与数字之间不需要增加空格：</p>
+<p><strong>正确</strong>：</p>
+<blockquote>
+<p>今天是 233° 的高温。</p>
+</blockquote>
+<blockquote>
+<p>新 MacBook Pro 有 15% 的 CPU 性能提升。</p>
+</blockquote>
+<p><strong>错误</strong>：</p>
+<blockquote>
+<p>今天是 233 ° 的高温。</p>
+</blockquote>
+<blockquote>
+<p>新 MacBook Pro 有 15 % 的 CPU 性能提升。</p>
+</blockquote>
+<h4 id="全角标点与其他字符之间不加空格">全角标点与其他字符之间不加空格</h4>
+<p><strong>正确</strong>：</p>
+<blockquote>
+<p>刚刚买了一部 iPhone，好开心！</p>
+</blockquote>
+<p><strong>错误</strong>：</p>
+<blockquote>
+<p>刚刚买了一部 iPhone ，好开心！</p>
+</blockquote>
+<h4 id="-ms-text-autospace-to-the-rescue"><code>-ms-text-autospace</code> to the rescue?</h4>
+<p>Microsoft 有个 <code>-ms-text-autospace</code> 的 CSS 属性可以实现自动为中英文之间增加空白。不过目前并未普及，另外在其他应用场景，例如 OS X、iOS 的用户界面目前并不存在这个特性，所以请继续保持随手加空格的习惯。</p>
+<h3 id="标点符号">标点符号</h3>
+<p>不重复使用标点符号<br>
+<strong>正确</strong>：</p>
+<blockquote>
+<p>德国队竟然战胜了巴西队！</p>
+</blockquote>
+<blockquote>
+<p>她竟然对你说「喵」？！</p>
+</blockquote>
+<p><strong>错误</strong>：</p>
+<blockquote>
+<p>德国队竟然战胜了巴西队！！</p>
+</blockquote>
+<blockquote>
+<p>德国队竟然战胜了巴西队！！！！！！！！</p>
+</blockquote>
+<blockquote>
+<p>她竟然对你说「喵」？？！！</p>
+</blockquote>
+<blockquote>
+<p>她竟然对你说「喵」？！？！？？！！</p>
+</blockquote>
+<h4 id="全角和半角">全角和半角</h4>
+<p>不明白什么是全角（全形）与半角（半形）符号？请查看维基百科词条『<a href="http://zh.wikipedia.org/wiki/%E5%85%A8%E5%BD%A2%E5%92%8C%E5%8D%8A%E5%BD%A2">全角和半角</a>』。</p>
+<p><strong>使用全角中文标点</strong><br>
+<strong>正确</strong>：</p>
+<blockquote>
+<p>嗨！你知道嘛？今天前台的小妹跟我说「喵」了哎！</p>
+</blockquote>
+<blockquote>
+<p>核磁共振成像（NMRI）是什么原理都不知道？JFGI！</p>
+</blockquote>
+<p><strong>错误</strong>：</p>
+<blockquote>
+<p>嗨! 你知道嘛? 今天前台的小妹跟我说 “喵” 了哎!</p>
+</blockquote>
+<blockquote>
+<p>嗨!你知道嘛?今天前台的小妹跟我说&quot;喵&quot;了哎!</p>
+</blockquote>
+<blockquote>
+<p>核磁共振成像 (NMRI) 是什么原理都不知道? JFGI!</p>
+</blockquote>
+<blockquote>
+<p>核磁共振成像(NMRI)是什么原理都不知道?JFGI!</p>
+</blockquote>
+<h4 id="数字使用半角字符">数字使用半角字符</h4>
+<p><strong>正确</strong>：</p>
+<blockquote>
+<p>这件蛋糕只卖 1000 元。</p>
+</blockquote>
+<p><strong>错误</strong>：</p>
+<blockquote>
+<p>这件蛋糕只卖 １０００ 元。</p>
+</blockquote>
+<p>例外：在设计稿、宣传海报中如出现极少量数字的情形时，为方便文字对齐，是可以使用全角数字的。</p>
+<h4 id="遇到完整的英文整句-特殊名词其內容使用半角标点">遇到完整的英文整句、特殊名词，其內容使用半角标点</h4>
+<p><strong>正确</strong>：</p>
+<blockquote>
+<p>乔布斯那句话是怎么说的？「Stay hungry, stay foolish.」</p>
+</blockquote>
+<blockquote>
+<p>推荐你阅读《Hackers &amp; Painters: Big Ideas from the Computer Age》，非常的有趣。</p>
+</blockquote>
+<p><strong>错误</strong>：</p>
+<blockquote>
+<p>乔布斯那句话是怎么说的？「Stay hungry，stay foolish。」</p>
+</blockquote>
+<blockquote>
+<p>推荐你阅读《Hackers＆Painters：Big Ideas from the Computer Age》，非常的有趣。</p>
+</blockquote>
+<h3 id="名词">名词</h3>
+<h4 id="专有名词使用正确的大小写">专有名词使用正确的大小写</h4>
+<p>大小写相关用法原属于英文书写范畴，不属于本 wiki 讨论內容，在这里只对部分易错用法进行简述。</p>
+<p><strong>正确</strong>：</p>
+<blockquote>
+<p>使用 GitHub 登录</p>
+</blockquote>
+<blockquote>
+<p>我们的客户有 GitHub、Foursquare、Microsoft Corporation、Google、Facebook, Inc.。</p>
+</blockquote>
+<p><strong>错误</strong>：</p>
+<blockquote>
+<p>使用 github 登录</p>
+</blockquote>
+<blockquote>
+<p>使用 GITHUB 登录</p>
+</blockquote>
+<blockquote>
+<p>使用 Github 登录</p>
+</blockquote>
+<blockquote>
+<p>使用 gitHub 登录</p>
+</blockquote>
+<blockquote>
+<p>使用 gｲんĤЦ8 登录</p>
+</blockquote>
+<blockquote>
+<p>我们的客户有 github、foursquare、microsoft corporation、google、facebook, inc.。</p>
+</blockquote>
+<blockquote>
+<p>我们的客户有 GITHUB、FOURSQUARE、MICROSOFT CORPORATION、GOOGLE、FACEBOOK, INC.。</p>
+</blockquote>
+<blockquote>
+<p>我们的客户有 Github、FourSquare、MicroSoft Corporation、Google、FaceBook, Inc.。</p>
+</blockquote>
+<blockquote>
+<p>我们的客户有 gitHub、fourSquare、microSoft Corporation、google、faceBook, Inc.。</p>
+</blockquote>
+<blockquote>
+<p>我们的客户有 gｲんĤЦ8、ｷouЯƧquﾑгє、๓เςг๏ร๏Ŧt ς๏гק๏гคtเ๏ภn、900913、ƒ4ᄃëв๏๏к, IПᄃ.。</p>
+</blockquote>
+<blockquote>
+<p>注意：当网页中需要配合整体视觉风格而出现全部大写／小写的情形，HTML 中请使用标准的大小写规范进行书写；并通过 <code>text-transform: uppercase;</code>／<code>text-transform: lowercase;</code> 对表现形式进行定义。</p>
+</blockquote>
+<h4 id="不要使用不地道的缩写">不要使用不地道的缩写</h4>
+<p><strong>正确</strong>：</p>
+<blockquote>
+<p>我们需要一位熟悉 JavaScript、HTML5，至少理解一种框架（如 Backbone.js、AngularJS、React 等）的前端开发者。</p>
+</blockquote>
+<p><strong>错误</strong>：</p>
+<blockquote>
+<p>我们需要一位熟悉 Js、h5，至少理解一种框架（如 backbone、angular、RJS 等）的 FED。</p>
+</blockquote>
+<p><strong>争议</strong><br>
+以下用法略带有个人色彩，即：无论是否遵循下述规则，从语法的角度来讲都是正确的。</p>
+<h4 id="链接之间增加空格">链接之间增加空格</h4>
+<p><strong>用法</strong>：</p>
+<blockquote>
+<p>请 <a href="https://eallion.com/chinese-copywriting-guidelines/#">提交一个 issue</a> 并分配给相关同事。</p>
+</blockquote>
+<blockquote>
+<p>访问我们网站的最新动态，请 <a href="https://eallion.com/chinese-copywriting-guidelines/#">点击这里</a> 进行订阅！</p>
+</blockquote>
+<p><strong>对比用法</strong>：</p>
+<blockquote>
+<p>请<a href="https://eallion.com/chinese-copywriting-guidelines/#">提交一个 issue</a> 并分配给相关同事。</p>
+</blockquote>
+<blockquote>
+<p>访问我们网站的最新动态，请<a href="https://eallion.com/chinese-copywriting-guidelines/#">点击这里</a>进行订阅！</p>
+</blockquote>
+<h4 id="简体中文使用直角引号">简体中文使用直角引号</h4>
+<p><strong>用法</strong>：</p>
+<blockquote>
+<p>「老师，『有条不紊』的『紊』是什么意思？」</p>
+</blockquote>
+<p><strong>对比用法</strong>：</p>
+<blockquote>
+<p>“老师，‘有条不紊’的‘紊’是什么意思？”</p>
+</blockquote>
+<h4 id="工具">工具</h4>
+<table>
+<thead>
+<tr>
+<th>仓库</th>
+<th>语言</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/vinta/paranoid-auto-spacing">vinta/paranoid-auto-spacing</a></td>
+<td>JavaScript</td>
+</tr>
+<tr>
+<td><a href="https://github.com/huei90/pangu.node">huei90/pangu.node</a></td>
+<td>Node.js</td>
+</tr>
+<tr>
+<td><a href="https://github.com/huacnlee/auto-correct">huacnlee/auto-correct</a></td>
+<td>Ruby</td>
+</tr>
+<tr>
+<td><a href="https://github.com/sparanoid/space-lover">sparanoid/space-lover</a></td>
+<td>PHP ( WordPress )</td>
+</tr>
+<tr>
+<td><a href="https://github.com/NauxLiu/auto-correct">nauxliu/auto-correct</a></td>
+<td>PHP</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ricoa/copywriting-correct">ricoa/copywriting-correct</a></td>
+<td>PHP</td>
+</tr>
+<tr>
+<td><a href="https://github.com/hotoo/pangu.vim">hotoo/pangu.vim</a></td>
+<td>Vim</td>
+</tr>
+<tr>
+<td><a href="https://github.com/sparanoid/grunt-auto-spacing">ssparanoid/grunt-auto-spacing</a></td>
+<td>Node.js (Grunt)</td>
+</tr>
+<tr>
+<td><a href="https://github.com/hjiang/scripts/blob/master/add-space-between-latin-and-cjk">hjiang/scripts/add-space-between-latin-and-cjk</a></td>
+<td>Python</td>
+</tr>
+</tbody>
+</table>
+<h4 id="谁在这样做">谁在这样做？</h4>
+<table>
+<thead>
+<tr>
+<th>网站</th>
+<th>文案</th>
+<th>UGC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="http://www.apple.com/cn/">Apple 中国</a></td>
+<td>Yes</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td><a href="http://www.apple.com/hk/">Apple 香港</a></td>
+<td>Yes</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td><a href="http://www.apple.com/tw/">Apple 台湾</a></td>
+<td>Yes</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td><a href="http://www.microsoft.com/zh-cn/">Microsoft 中国</a></td>
+<td>Yes</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td><a href="http://www.microsoft.com/zh-hk/">Microsoft 香港</a></td>
+<td>Yes</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td><a href="http://www.microsoft.com/zh-tw/">Microsoft 台湾</a></td>
+<td>Yes</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td><a href="https://leancloud.cn/">LeanCloud</a></td>
+<td>Yes</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td><a href="https://www.zhihu.com/">知乎</a></td>
+<td>Yes</td>
+<td>部分用户达成</td>
+</tr>
+<tr>
+<td><a href="https://www.v2ex.com/">V2EX</a></td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><a href="https://segmentfault.com/">SegmentFault</a></td>
+<td>Yes</td>
+<td>部分用户达成</td>
+</tr>
+<tr>
+<td><a href="http://apple4us.com/">Apple4us</a></td>
+<td>Yes</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td><a href="https://www.wandoujia.com/">豌豆荚</a></td>
+<td>Yes</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td><a href="https://ruby-china.org/">Ruby China</a></td>
+<td>Yes</td>
+<td>标题达成</td>
+</tr>
+<tr>
+<td><a href="https://phphub.org/">PHPHub</a></td>
+<td>Yes</td>
+<td>标题达成</td>
+</tr>
+<tr>
+<td><a href="http://sspai.com/">少数派</a></td>
+<td>Yes</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td><a href="https://leetcode-cn.com/">力扣 LeetCode</a></td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<h4 id="参考文献">参考文献</h4>
+<p><a href="http://grammar.about.com/od/punctuationandmechanics/a/Guidelines-For-Using-Capital-Letters.htm">Guidelines for Using Capital Letters</a><br>
+<a href="http://en.wikipedia.org/wiki/Letter_case">Letter case - Wikipedia</a><br>
+<a href="http://www.oxforddictionaries.com/words/punctuation">Punctuation - Oxford Dictionaries</a><br>
+<a href="https://owl.english.purdue.edu/owl/section/1/6/">Punctuation - The Purdue OWL</a><br>
+<a href="http://www.wikihow.com/Use-English-Punctuation-Correctly">How to Use English Punctuation Corrently - wikiHow</a><br>
+<a href="https://zh.opensuse.org/index.php?title=Help:%E6%A0%BC%E5%BC%8F">格式 - openSUSE</a><br>
+<a href="http://zh.wikipedia.org/wiki/%E5%85%A8%E5%BD%A2%E5%92%8C%E5%8D%8A%E5%BD%A2">全角和半角 - 维基百科</a><br>
+<a href="http://zh.wikipedia.org/wiki/%E5%BC%95%E8%99%9F">引号 - 维基百科</a><br>
+<a href="http://zh.wikipedia.org/wiki/%E7%96%91%E5%95%8F%E9%A9%9A%E5%98%86%E8%99%9F">疑问惊叹号 - 维基百科</a></p>
+<p>原文地址：https://github.com/mzlogin/chinese-copywriting-guidelines/blob/Simplified/README.md</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[批量修改域名解析记录]]></title>
+        <id>https://blog.oxida.cn/63IAlM3V8/</id>
+        <link href="https://blog.oxida.cn/63IAlM3V8/">
+        </link>
+        <updated>2020-05-12T05:32:59.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="操作场景">操作场景</h3>
+<p>当您需要批量修改当前登录账户的域名解析记录时，本文档指导您如何批量修改域名解析记录。</p>
+<h3 id="操作步骤">操作步骤</h3>
+<p>1.登录DNSPod<a href="https://console.dnspod.cn/dns/batch/modify-record">管理控制台</a>。<br>
+2.在&quot;DNS解析&quot;列表中，选择【批量管理】，单击操作栏的【修改记录】，进入该域名的【修改记录】页面。如下图所示：<br>
+<img src="https://blog.oxida.cn/post-images/1589262754949.png" alt="" loading="lazy"></p>
+<p>通过提供的搜索选项，查找您需要批量修改的解析类型，并单击搜索。</p>
+<p><strong>提供的搜索选项</strong>：</p>
+<ul>
+<li><strong>记录类型</strong>：可通过记录类型搜索，如：A、CNAME、MX、TXT、NS、AAAA、SRV、URL。</li>
+<li><strong>线路类型</strong>：可通过线路类型搜索，如：默认、电信、联通、教育网、搜索引擎、移动、境内、境外、奇虎、百度、谷歌、有道、必应、搜狗。</li>
+<li><strong>主机记录</strong>：可通过填写主机记录相关关键字进行搜索。</li>
+<li><strong>记录值</strong>：可通过填写记录值进行搜索。</li>
+</ul>
+<p><strong>例</strong>：选择<font color="#dd0000">记录类型</font>与<font color="#dd0000">A</font>记录，如下图所示：</p>
+<figure data-type="image" tabindex="1"><img src="https://blog.oxida.cn/post-images/1589263171598.png" alt="" loading="lazy"></figure>
+<blockquote>
+<p>注意：<br>
+最近添加的记录可能未包含在搜索范围中，如未搜索到请稍后重试。</p>
+</blockquote>
+<p>3.在【修改记录】选项卡中,选择您需要修改的域名，并选择该域名下需要修改的主机记录。如下图所示：<br>
+<img src="https://blog.oxida.cn/post-images/1589263966633.png" alt="" loading="lazy"></p>
+<p>4.选择您需要修改的记录，并选择或者填写需要修改内容，例：将&quot;<font color="#dd0000">记录类型</font>&quot;修改为&quot;<font color="#dd0000">CNAME</font>&quot;,记录值:<font color="#dd0000">dnspod.cn</font>。</p>
+<p><img src="https://blog.oxida.cn/post-images/1589266174581.png" alt="" loading="lazy"><br>
+提供的修改选项：</p>
+<ul>
+<li>
+<p><strong>记录类型</strong>：可修改为A、CNAME、MX、TXT、NS、AAAA、SRV、显性URL、隐性URL。</p>
+<ul>
+<li><strong>A记录</strong>：又称IP指向，用来指定主机名（或域名）对应的IP 地址记录。如果您需要实现一个或多个子域名批量指向同一个目标主机地址，您可以在“记录值”处填写目标主机地址。如：需要把选中的子域名“www.123.com” 和“cloud.123.com”的子域名IP指向“113.96.13.15”时，您可以在 “记录值” 处填写 “113.96.13.15” 即可。</li>
+<li><strong>CNAME</strong>：又称真实名称记录，用于将一个域名映射到另一个域名。如果您需要将一个或者多个子域名指向另一个域名，您可以在“记录值”处填写另一个域名。如：可以把“www.123.com”和“www.321.com”都指向域名“www.213.com”。</li>
+<li><strong>MX</strong>：又称邮件交换记录,用于电子邮件系统发邮件时根据收信人的地址后缀来定位邮件服务器，如果您需要将一个或者多个子域名指向同一个邮件服务器。您可以在“记录值”处填写邮件服务器的IP地址或企业邮局给您提供的域名。如：可以把“www.123.com”和“www.321.com”都指向域名邮件服务器“mxbiz1.qq.com”。同时可以批量设置MX优先级，用来指定邮件服务器接收邮件的先后顺序，数值越小优先级越高。</li>
+<li><strong>TXT</strong>：一般用于为某个主机名或域名设置说明。如果您需要对一个或着多个域名进行批量标识和说明，您可以在“记录值”处填写需要设置的标识和说明。</li>
+<li><strong>NS</strong>：又称域名服务器记录，用来指定该域名由哪个DNS服务器来进行解析。如果您需要将一个或者多个域名交给其他 DNS 服务商解析，您可以在“记录值”处填写需要托管的DNS 服务器域名。建议您使用腾讯云系统默认的 NS 记录，<code>f1g1ns1.dnspod.net</code>。</li>
+<li><strong>AAAA</strong>：用来将域名解析到IPv6地址的DNS记录。如果您需要批量将一个或者多个子域名指向同一个 IPv6 地址。您可以在“记录值”处填写需要解析的IPv6地址。</li>
+<li><strong>SRV</strong>：SRV 记录用来标识某台服务器使用了某个服务，常见于微软系统的目录管理。如果您需要批量修改一个或者多个子域名的SRV 记录。您可以在“记录值”处填写需要设置的SRV 记录。SRV 的记录值格式应为：优先级、空格、权重、空格、端口、空格、主机名，如：<code>5 0 5269 example.domain.com</code>。</li>
+<li><strong>显性URL</strong>：用于将一个域名指向另外一个已经存在的站点时，需要添加 URL 记录。显性URL用的是301重定向技术，效果为浏览器地址栏输入“http://a.com”回车，打开网站内容是目标地址 “http://cloud.tencent.com”的网站内容，且地址栏显示目标地址“http://cloud.tencent.com”。如果您需要批量修改一个或者多个子域名指向同一个目标地址。您可以在“记录值”处填写需要设置的目标地址。</li>
+<li><strong>隐性URL</strong>：隐性URL与显性URL的作用与操作方式相同。隐性URL用的是 iframe 框架技术、非重定向技术，效果为浏览器地址栏输入“http://a.com”回车，打开网站内容是目标地址“http://cloud.tencent.com”的网站内容，但地址栏显示当前地址 “http://a.com”。</li>
+</ul>
+<blockquote>
+<p>注意：<br>
+目标地址不允许被嵌套时，则不能使用隐性转发（例如 QQ 空间，不能使用隐性转发）。</p>
+</blockquote>
+</li>
+<li>
+<p><strong>线路类型</strong>：一般用于自动识别浏览者的来源，并把相同的域名智能DNS解析到双线路机器的网通或电信的IP， 以便就近访问您的网站。具体线路类型说明可参考：<a href="https://cloud.tencent.com/document/product/302/12079">线路类型如何选择</a>。如果您需要批量修改一个或者多个子域名的线路类型，选择您需要修改的线路类型即可。可修改的选项有默认、电信、联通、教育网、搜索引擎、移动、境内、境外、奇虎、百度、谷歌、有道、必应、搜狗。</p>
+</li>
+<li>
+<p><strong>主机记录</strong>：用于修改子域名的前缀。如果您需要批量修改一个或者多个子域名的域名前缀，您可以在“记录值”处填写需要设置的域名前缀。</p>
+</li>
+<li>
+<p><strong>记录值</strong>：用于修改解析记录中的记录值。如果您需要批量修改一个或者多个子域名的解析记录的记录值，您可以填写您需要修改的记录值。</p>
+</li>
+<li>
+<p><strong>TTL</strong>：指各地 DNS 服务器缓存解析记录的时长。增大TTL值，可以节约域名解析时间，给网站访问加速。减小TTL值，可以减少更换空间时的不可访问时间。同时修改TTL值可以提高系统的安全性。</p>
+</li>
+</ul>
+<p>4.单击【批量修改】，进入修改记录确认页面，检查并确认需要批量修改的内容无误后，单击【批量修改】，如下图所示：<br>
+<img src="https://blog.oxida.cn/post-images/1589264512223.png" alt="" loading="lazy"></p>
+<p>5.，等待&quot;状态&quot;提示&quot;<font color="#00dd00">成功</font>&quot;，至此批量修改域名解析记录完成。如下图所示。<br>
+<img src="https://blog.oxida.cn/post-images/1589264844632.png" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[我是如何学摄影的？]]></title>
+        <id>https://blog.oxida.cn/waQ2Wkhed/</id>
+        <link href="https://blog.oxida.cn/waQ2Wkhed/">
+        </link>
+        <updated>2020-05-08T05:19:32.000Z</updated>
+        <content type="html"><![CDATA[<p>很多人问我这个问题，所以我把它写在这里，有助于我不重复劳动的回复，同样的问题，同样的办法，重复的述说，总会心情爆炸的一天。</p>
+<h3 id="契机">契机</h3>
+<blockquote>
+<p>每件事物的开始，总会有一个开端，它会带领你，步入“歧途”。</p>
+</blockquote>
+<p>这要回到2017年，那是我一年实习生涯里，刚刚开始的开端，我并没有急于寻找实习工作，而且买了一张去往成都的飞机票，是的，我打算去旅行了。在那里，我和我从小穿一条裤子长大的多年兄弟见面了，它是一位饭都吃不起的摄影师，暂且这么称呼，在与他接触之后，我发现我喜欢上了这门艺术。</p>
+<h3 id="着手准备吧既然喜欢的话">着手准备吧，既然喜欢的话</h3>
+<p>照片的好坏，是一个非常难以度量的问题。男摄拍意境，女摄拍大头，各有所爱。所以我需要给自己一个度量单位，正确的判断自己是否有所成长，在深思熟虑过后，我是这样给自己定义的。</p>
+<ul>
+<li>给他人拍摄时<br>
+拍到他喜欢，感受他的风格</li>
+<li>给自己拍照<br>
+自己喜欢就好</li>
+<li>给大众拍照<br>
+发到朋友圈，社区，从数据层面，判断自己是否有成长，什么才是大众喜欢的。</li>
+</ul>
+<p>三条支线，你好，我好，他也好。</p>
+<h3 id="从理论开始步入初阶">从理论开始步入初阶</h3>
+<h4 id="第一步了解相机">第一步，了解相机。</h4>
+<p>相机是你手中武器，如果你对你的武器都不了解的话，如何去利用好你这把武器呢？<br>
+这个阶段，有很多你需要做的事情，如从怎样选购相机？认识相机摄影基础知识，术语，参数等。这是一个漫长并且煎熬的过程，一边你需要面对枯燥无味的理论，一边还需要安慰你跃跃欲试的心。<br>
+我并不想在这里去一步一步去述说学习的步骤，很麻烦，并且没有任何意义，探索和总结才会使你更快成长。<br>
+你可以买书，你可以搜索，你可以看视频。并且学会总结，和理清的你思路，如果有机会，我会写一篇，如何学习的文章。</p>
+<h4 id="第二步走起来">第二步，走起来</h4>
+<p>携带着你的装备，去外出，去旅行，不断重复的，咔咔咔咔咔，无论你是天才，还是🐷，它都是非常受用的办法。</p>
+<h4 id="第三步看看看">第三步，看看看</h4>
+<p>你可以在你的手机里下载hola，图虫，我最喜欢的是hola，不怎么喜欢图虫，因为这个APP，总有一股割劳动力韭菜的味道。</p>
+<h4 id="第四步持续">第四步，持续</h4>
+<p>这是非常难的一步，因为在你的生活里，你会遇到形形色色的事情，它会阻碍你学习的步伐。而这里的持续，所说的是，你可以因为忙碌而忘记掉你的兴趣，但你闲暇之时，你一定要记起你的爱好。</p>
+<p><strong>总结</strong>：摄影是一个非常烧钱的事情，你可能会忍不住购买各种器材，如果你有闲钱，你开心就好。如果没有，相信自己，用自己手中的垃圾设备，也能拍出好的照片，哪怕是一个手机。</p>
+<p><strong>BY：氧化先生</strong></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[能让你走向修仙之路八个问题]]></title>
+        <id>https://blog.oxida.cn/-AYAt0A8D/</id>
+        <link href="https://blog.oxida.cn/-AYAt0A8D/">
+        </link>
+        <updated>2020-04-27T10:54:51.000Z</updated>
+        <content type="html"><![CDATA[<p>想体验修仙吗？这里有八个问题。或许能够帮助到你<br>
+在回答之前，请关掉你的电脑，手机等电子设备，拿出足够大的白纸，和一只笔。选择以下三个问题中的一个，进行对自己反复的提问，并做回答。相信我，你走不出来。</p>
+<h3 id="人生意义">人生意义</h3>
+<p>一.你活着是为了什么？<br>
+二.人生的正确意义是什么？<br>
+三.我是谁？</p>
+<h3 id="感情生活">感情生活</h3>
+<p>四.她（他）是不是喜欢我？<br>
+五.我为什么会喜欢他（她）？<br>
+六.他（她）是否真的喜欢过我？</p>
+<h3 id="宇宙万物">宇宙万物</h3>
+<p>七.人类的起源？<br>
+八.1*0等于0，究竟是因为1乘以任何数字都是那个数字本身，还是因为0乘以任何数字都是0？<br>
+九.穿山甲到底说了什么？</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[如何打造自己的运营矩阵思维]]></title>
+        <id>https://blog.oxida.cn/VqG3alX_Q/</id>
+        <link href="https://blog.oxida.cn/VqG3alX_Q/">
+        </link>
+        <updated>2020-03-26T03:33:17.000Z</updated>
+        <content type="html"><![CDATA[<center>每个平台可以想象成现实生活的一座城池</center>
+<center>而这些城池都是可以相互连接的</center>
+<center>每个城池都有自己的规则</center>
+<center>这些规则就是城池中的法律</center>
+<center>因为是不同的城池</center>
+<center>所以法律都不一样</center>
+<center>你需要制造一条丝绸之路。</center>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[抖音算法机制]]></title>
+        <id>https://blog.oxida.cn/y87x7Koqj/</id>
+        <link href="https://blog.oxida.cn/y87x7Koqj/">
+        </link>
+        <updated>2020-03-26T03:29:01.000Z</updated>
+        <content type="html"><![CDATA[<p>一般普通用户注册抖音后，抖音会正向匹配你的通讯录信息，如果你不做限制的话，当你发了一个抖音后，抖音会首推你通讯录信息里面的人，这就是为什么，你发抖音后，会有一帮子你熟悉的人看见你的抖音，而这帮人就是你的第一个关卡，而且是缓存机制，也就是你熟悉的人打开抖音的那一下，就存在了你的手机里，虽然他们还没有刷到，不过刷了热门视频后，就会到你的了，然后第二次关卡就是陌生用户了，当刷抖音的人，刷了半个小时～1小时后，热门内容耗尽，就会进入审核状态，这时候就会看见抖音点赞，播放不高的事情，而这个时候的基本上就决定了，你能不能进入第三个关卡，但审核数是有限制的，主要看你的账号权重，权重高了，审核数会高些，审核数高了，看的人多，互动就基本OJBK了，所以这个时候真的是考验内容的时候，过了第二个关卡后，恭喜你，进入中人工审核，没什么违反国家法律的，基本都能过，然后到了中期热推，这个时候，点赞1～2万基本稳稳的，剩下的就看内容了。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[产品经理从0到1孵化产品的基本流程]]></title>
+        <id>https://blog.oxida.cn/5uwEB5dfL/</id>
+        <link href="https://blog.oxida.cn/5uwEB5dfL/">
+        </link>
+        <updated>2019-08-09T12:45:39.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://blog.oxida.cn/post-images/1587213969167.png" alt="" loading="lazy"></figure>
+<h1 id="一产品定位">一.产品定位</h1>
+<p>定位是指确定公司或产品在使用者（顾客，消费者，甲方）心目中的形象和地位。</p>
+<h5 id="产品定位必须解决的五个问题">产品定位必须解决的五个问题：</h5>
+<p>1.满足谁的需要?<br>
+2.他们有些什么需要?<br>
+3.我们提供的是否满足需要?<br>
+4.需要与提供的独特结合点如何选择?<br>
+5.这些需要如何有效实现?</p>
+<h5 id="产品定位五步法">产品定位五步法</h5>
+<h6 id="基础产品定位采用五步法">基础产品定位采用五步法：</h6>
+<p>目标市场定位(Who)<br>
+产品需求定位(What)<br>
+企业产品测试定位(IF)<br>
+产品差异化价值点定位(Which)<br>
+营销组合定位(How)</p>
+<figure data-type="image" tabindex="2"><img src="https://blog.oxida.cn/post-images/1587214298801.png" alt="" loading="lazy"></figure>
+<h3 id="第一步目标市场定位">第一步:目标市场定位</h3>
+<p>目标市场定位是一个市场细分与目标市场选择的过程，即明白为谁服务(Who)。在市场分化的今天，任何一家公司和任何一种产品的目标顾客都不可能是所有的人，对于选择目标顾客的过程，需要确定细分市场的标准对整体市场进行细分，对细分后的市场进行评估，最终确定所选择的目标市场。</p>
+<h5 id="目标市场定位策略">目标市场定位策略：</h5>
+<p>无视差异，对整个市场仅提供一种产品；<br>
+重视差异，为每一个细分的子市场提供不同的产品；<br>
+仅选择一个细分后的子市场，提供相应的产品。</p>
+<h3 id="第二步产品需求定位">第二步:产品需求定位</h3>
+<p>产品需求定位，是了解需求的过程，即满足谁的什么需要(What)。产品定位过程是细分目标市场并进行子市场选择的过程。这里的细分目标市场是对选择后的目标市场进行细分，选择一个或几个目标子市场的过程。对目标市场的需求确定，不是根据产品的类别进行，也不是根据消费者的表面特性来进行，而是根据顾客的需求价值来确定。顾客在购买产品时，总是为了获取某种产品的价值。产品价值组合是由产品功能组合实现的，不同的顾客对产品有着不同的价值诉求，这就要求提供与诉求点相同的产品。在这一环节，需要调研需求，这些需求的获得可以指导新产品开发或产品改进。</p>
+<h3 id="第三步产品测试定位">第三步:产品测试定位</h3>
+<p>企业产品测试定位是对企业进行产品创意或产品测试．即确定企业提供何种产品或提供的产品是否满足需求(IF)，该环节主要是进行企业自身产品的设计或改进。通过使用符号或者实体形式来展示产品(未开发和已开发)的特性，考察消费者对产品概念的理解、偏好、接受。这一环节测试研究需要从心理层面到行为层面来深入探究。以获得消费者对某一产品概念的整体接受情况。</p>
+<p>如：<br>
+考察产品概念的可解释性与传播性；<br>
+同类产品的市场开发度分析：<br>
+产品属性定位与消费者需求的关联分析：<br>
+对消费者的选择购买意向分析。</p>
+<p>首先，需要进行产品概念与顾客认知、接受的对应分析，针对某一给定产品或概念，主要考察其可解释性与可传播性。很多成功的企业家并不一定是新产品的研发者，而是新概念的定义和推广者。</p>
+<p>其次，同类产品的市场开发度分析，包括产品渗透水平和渗透深度、主要竞争品牌的市场表现已开发度、消费者可开发度、市场竞争空隙机会，用来衡量产品概念的可推广度与偏爱度。从可信到偏爱，这里有一个层次的加深。有时，整个行业都会面临消费者的信任危机，此时推出新品就面临着产品概念的不被信任与不被认可的危机。</p>
+<p>再次．分析实际意义上的产品价格和功能等产品属性定位与消费者需求的关联。因为产品概念的接受和理解程度再高，如果没有对产品的需求．如果产品的功能不是恰恰满足了消费者某方面的需求，或者消费者的这种需求有很多的产品给予了很好的满足，这一产品概念仍然很难有好的市场前景。通过对影响产品定位和市场需求的因素关联分析，对产品的设计、开发和商业化进程作出调整。</p>
+<p>最后，探究消费者是否可能将心理的接受与需求转化为行为上的购买与使用，即对消费者的选择购买意向进行分析，以进行企业自身产品定位的最终效果测定。针对企业自身产品定位环节，这一层面包括新产品开发研究、概念测试、产品测试、命名研究、包装测试、产品价格研究等。</p>
+<h3 id="第四步差异化价值点定位">第四步:差异化价值点定位</h3>
+<p>进行营销属性的定位，一般的产品独特销售价值定位方法(USP)包括从产品独特价值特色定位、从产品解决问题特色定位、从产品使用场合时机定位、从消费者类型定位、从竞争品牌对比定位、从产品类别的游离定位、综合定位等。</p>
+<p>在此基础上，需要进行相应的差异化品牌形象定位与推广。</p>
+<p>差异化价值点定位即需要解决目标需要、企业提供产品以及竞争各方的特点的结合问题，同时，要考虑提炼的这些独特点如何与其他营销属性综合(Which)。在上述研究的基础上，结合基于消费者的竞争研究．进行营销属性的定位，一般的产品独特销售价值定位方法(USP)包括从产品独特价值特色定位、从产品解决问题特色定位、从产品使用场合时机定位、从消费者类型定位、从竞争品牌对比定位、从产品类别的游离定位、综合定位等。在此基础上，需要进行相应的差异化品牌形象定位与推广．</p>
+<h3 id="第五步营销组合定位">第五步:营销组合定位</h3>
+<p>在确定满足目标顾客的需求与企业提供的产品之后，需要设计一个营销组合方案并实施这个方案，使定位到位。</p>
+<p>这不仅仅是品牌推广的过程，也是产品价格、渠道策略和沟通策略有机组合的过程。正如菲利普．科特勒所言，解决定位问题，能帮助企业解决营销组合问题。</p>
+<p>营销组合——产品、价格、渠道、促销——是定位战略战术运用的结果。</p>
+<p>在有的情况下，到位过程也是一个再定位的过程。因为在产品差异化很难实现时，必须通过营销差异化来定位。</p>
+<p>今天，你推出任何一种新产品畅销不过一个月，就马上会有模仿品出现在市场上，而营销差异化要比产品模仿难得多。</p>
+<p>因此，仅有产品定位已经远远不够，企业必须从产品定位扩展至整个营销的定位。</p>
+<p>营销组合定位即如何满足需要(How)，它是进行营销组合定位的过程。在确定满足目标顾客的需求与企业提供的产品之后，需要设计一个营销组合方案并实施这个方案，使定位到位。这不仅仅是品牌推广的过程，也是产品价格、渠道策略和沟通策略有机组合的过程。正如菲利普．科特勒所言，解决定位问题，能帮助企业解决营销组合问题。营销组合——产品、价格、渠道、促销——是定位战略战术运用的结果。在有的情况下，到位过程也是一个再定位的过程。因为在产品差异化很难实现时，必须通过营销差异化来定位。今天，你推出任何一种新产品畅销不过一个月，就马上会有模仿品出现在市场上，而营销差异化要比产品模仿难得多。因此，仅有产品定位已经远远不够，企业必须从产品定位扩展至整个营销的定位。</p>
+<h1 id="二市场调研">二.市场调研</h1>
+<p>目的：摸清市场规模，确定产品方向，盈利情况，增长态势, 行业概况</p>
+<p>市场调查报告是市场调查人员以书面形式，反映市场调查内容及工作过程，并提供调查结论和建议的报告。市场调查报告是市场调查研究成果的集中体现，其撰写的好坏将直接影响到整个市场调查研究工作的成果质量。一份好的市场调查报告，能给企业的市场经营活动提供有效的导向作用，能为企业的决策提供客观依据。</p>
+<p>市场调查报告的一般格式<br>
+从严格意义上说，市场调查报告没有固定不变的格式。不同的市场调查报告写作，主要依据调查的目的、内容、结果以及主要用途来决定。但一般来说，各种市场调查报告在结构上都包括标题、导言、主体和结尾几个部分。</p>
+<p>1．标题</p>
+<p>市场调查报告的标题即市场调查的题目。标题必须准确揭示调查报告的主题思想。标题要简单明了、高度概括、题文相符。如《××市居民住宅消费需求调查报告》、《关于化妆品市场调查报告》、《××产品滞销的调查报告》等，这些标题都很简明，能吸引人。</p>
+<p>2．导言</p>
+<p>导言是市场调查报告的开头部分，一般说明市场调查的目的和意义，介绍市场调查工作基本概况，包括市场调查的时间、地点、内容和对象以及采用的调查方法、方式。这是比较常见的写法。也有调查报告在导言中，先写调查的结论是什么，或直接提出问题等，这种写法能增强读者阅读报告的兴趣。</p>
+<p>3．主体部分</p>
+<p>这是市场调查报告中的主要内容，是表现调查报告主题的重要部分。这一部分的写作直接决定调查报告的质量高低和作用大小。主体部分要客观、全面阐述市场调查所获得的材料、数据，用它们来说明有关问题，得出有关结论； 对有些问题、 现象要做深入分析、评论等。总之，主体部分要善于运用材料，来表现调查的主题。</p>
+<p>4．结尾<br>
+主要是形成市场调查的基本结论，也就是对市场调查的结果作一个小结。有的调查报告还要提出对策措施，供有关决策者参考。<br>
+有的市场调查报告还有附录。附录的内容一般是有关调查的统计图表、有关材料出处、参考文献等。</p>
+<p>撰写市场调查报告的基本要求<br>
+1．调查报告力求客观真实、实事求是<br>
+2．调查报告要做到调查资料和观点相统一<br>
+3．调查报告要突出市场调查的目的<br>
+4．调查报告的语言要简明、准确、易懂</p>
+<h5 id="三竞品分析">三.竞品分析</h5>
+<p>竞品分析报告<br>
+竞品分析报告的目的是了解竞品情况，所谓知己知彼，百战不殆，商场如战场。</p>
+<p>作用有以下几点：<br>
+了解。了解竞品定位、产品、用户、业务、盈利、公司情况，行业趋势。<br>
+对比。对比中找差异，找行动点。<br>
+验证。竞争对手的项目或功能</p>
+<p>基本报告内容：</p>
+<p>行业分析（市场规模、盈利情况、增长态势）；<br>
+产品定位及发展策略；<br>
+公司情况（员工数量、重要背景、融资情况）；<br>
+用户情况（目标用户、用户数据）；<br>
+市场数据（业务规模、市场占有率）；<br>
+核心功能；<br>
+产品优缺点；<br>
+运营及推广策略；<br>
+总结&amp;行动点。</p>
+<p>四.用户调研及分析<br>
+目的<br>
+用户研究可以帮助我们识别不明确的需求，并填补我们对用户，使用环境，挑战和机遇的认识上的任何空白。它还帮助我们将我们的产品和业务战略与我们用户的核心需求和目标保持一致。我们要知道的是，有用的数据来自第一次用户测试，而不是研究。因此，我们必须要做到以用户为中心的研究。</p>
+<p>1.理解目标<br>
+谁是用户？<br>
+他们的行为，目标，动机和需求是什么？<br>
+你对他们有什么假设？<br>
+他们目前如何使用您的产品？<br>
+他们还使用了什么其他产品？<br>
+他们在使用中遇到了哪些问题？<br>
+他们喜欢使用你的产品吗？</p>
+<p>基本调研法：<br>
+情境调查<br>
+调查问卷<br>
+日记研究</p>
+<h5 id="五产品需求文档确定及文档编写">五.产品需求文档确定及文档编写</h5>
+<p>产品需求文档：<br>
+该文档是产品项目由“概念化”阶段进入到“图纸化”阶段的最主要的一个文档。当然，这个定义针对的是一个全新的产品。广义上来讲，产品需求的描述，应该包含有产品的战略和战术，战略是指：产品定位、目标市场、目标用户、竞争对手等。战术是指产品的结构、核心业务流程、具体用例描述、功能&amp;内容描述等。</p>
+<h5 id="六原型设计">六.原型设计</h5>
+<p>目的：原型设计是交互设计师与PD、PM、网站开发工程师沟通的最好工具。<br>
+常用工具：Axure,墨刀</p>
+<h5 id="七产品开发">七.产品开发</h5>
+<p>交由开发工程师开发产品</p>
+<h5 id="八产品测试">八.产品测试</h5>
+<p>产品测试的目的是：</p>
+<p>发现现有产品的缺点；</p>
+<p>评价商业前景；</p>
+<p>评价其他产品配方；</p>
+<p>发现产品对各个细分市场的吸引力；</p>
+<p>获得营销计划其他元素的创意。</p>
+<p>当市场调研经理面对下面问题时，应该考虑使用产品测试：</p>
+<p>如何使产品的属性特征最优化，从而更吸引顾客；</p>
+<p>如何识别竞争产品的优势和弱势，来确定产品在目标市场中的位置；</p>
+<p>与竞争对手相比，产品在哪些特性上更吸引顾客；</p>
+<p>目前就产品属性而言，是否吸引顾客；是否在某些属性上还可以改进；</p>
+<p>改进后的产品是否真的比改进前好；顾客能否区分改进前后产品的区别。</p>
+<h5 id="九总结与版本迭代">九.总结与版本迭代</h5>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Sublime Text 3 安装,注册,设置中文教程]]></title>
+        <id>https://blog.oxida.cn/sublime-text-3-an-zhuang-zhu-ce-she-zhi-zhong-wen-jiao-cheng/</id>
+        <link href="https://blog.oxida.cn/sublime-text-3-an-zhuang-zhu-ce-she-zhi-zhong-wen-jiao-cheng/">
+        </link>
+        <updated>2019-08-06T10:35:56.000Z</updated>
+        <content type="html"><![CDATA[<p>最近安装了sublime text3,  为了以后安装不再麻烦, 留个笔记. 同时希望能帮助有需要的你.</p>
+<p>(过程有点简洁,照著一步步操作就行)</p>
+<p><strong>下载地址</strong><br>
+下载地址 : http://www.sublimetext.com/ (官网)</p>
+<p><strong>注册</strong><br>
+点选 ·help -&gt; enter Licence· ,然后输入如下信息:</p>
+<pre><code>Alexey Plutalov
+Single User License
+EA7E-860776
+3DC19CC1 134CDF23 504DC871 2DE5CE55
+585DC8A6 253BB0D9 637C87A2 D8D0BA85
+AAE574AD BA7D6DA9 2B9773F2 324C5DEF
+17830A4E FBCF9D1D 182406E9 F883EA87
+E585BBA1 2538C270 E2E857C2 194283CA
+7234FF9E D0392F93 1D16E021 F1914917
+63909E12 203C0169 3F08FFC8 86D06EA8
+73DDAEF0 AC559F30 A6A67947 B60104C6
+</code></pre>
+<p>(亲测可用)</p>
+<p>安装 <code>package control</code></p>
+<ul>
+<li>
+<p>按 <code>ctrl</code> +<code>~</code>键,调出控制台</p>
+</li>
+<li>
+<p>在控制台裡输入:</p>
+</li>
+</ul>
+<pre><code>import  urllib.request,os;pf='Package Control.sublime-package';ipp=sublime.installed_packages_path();urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler()));open(os.path.join(ipp,pf),'wb').write(urllib.request.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read())
+</code></pre>
+<p>然后回车.看见在<code>preferences</code>裡有<code>package control</code>就说明安装成功了</p>
+<p><strong>设置中文</strong></p>
+<p>preferences-&gt;package control-&gt;搜寻框输入install-&gt;选择install package并回车-&gt;查询chinese-&gt;选择ChineseLocalization外挂</p>
+<p>//安装后会自动把字元变为中文,可以在help裡的Language设定繁体,日语或者英语</p>
+<p>安装过程亲测有效,软件版本为sublime text3</p>
+<p>以上!</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[5个Ruby on Rails不常见的提示]]></title>
+        <id>https://blog.oxida.cn/5-ge-ruby-on-rails-bu-chang-jian-de-ti-shi/</id>
+        <link href="https://blog.oxida.cn/5-ge-ruby-on-rails-bu-chang-jian-de-ti-shi/">
+        </link>
+        <updated>2019-03-15T04:16:55.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>自从我开始使用Ruby on Rails以来，经过几年的使用，我不禁想知道我为什么能在Ruby的世界中发现一些新东西。</p>
+</blockquote>
+<p>Ruby很少使用必备的方法，主要是“语法糖”，虽然它很不规范，但它会使你的代码更清晰。不过有些时候可能只是新的Ruby或Rails版本出现了新的变化。</p>
+<p><strong>Hash#dig</strong><br>
+我使用的第一个Ruby版本是1.8，但是这个方法是在2.3中引入的。<br>
+我做了多少次这样的事情：</p>
+<pre><code>if params[:user] &amp;&amp; params[:user][:address] &amp;&amp; params[:user][:address][:somewhere_deep]
+</code></pre>
+<p>后来才发现，对于Hash对象的&amp;，可以将其dig视为一种安全的导航操作符。所以现在你可以重写这样的东西：</p>
+<pre><code>if params.dig(:user, :address, :somewhere_deep)
+</code></pre>
+<p><strong>Object#presence_in</strong></p>
+<p>但你实际上不需要检查包含布尔运算的结果时，它允许你使用单个方法来调用替换条件（通常是三元运算符），但是检查对象本身。例如，你的代码如下所示：</p>
+<pre><code>sort_options = [:by_date, :by_title, :by_author]
+...
+sort = sort_options.include?(params[:sort]) 
+  ? params[:sort] 
+  : :by_date
+
+# Another option
+sort = (sort_options.include?(params[:sort]) &amp;&amp; params[:sort]) || :by_date
+</code></pre>
+<p>这看起来不是更好吗？</p>
+<pre><code>params [：sort] .presence_in（sort_options）|| ：by_date
+</code></pre>
+<p><strong>Module#alias_attribute</strong></p>
+<p>好吧，当我使用遗留数据库处理项目时，我发现这非常有用。它有一个表奇怪的列名一样SERNUM_0，ITMDES1_0等。我们将此表映射到ActiveRecord模型，而不是在其上编写查询和范围WeirdTable.where(SERNUM_0: ‘123’)，我们开始使用alias_attribute它，因为它不仅生成getter和setter（以及谓词方法），而且还在查询中工作：</p>
+<pre><code>alias_attribute：name，：ITMDES1_0 
+... 
+scope：by_name， - &gt;（name）{where（name：name）}
+</code></pre>
+<p><strong>Object#presence</strong></p>
+<p>这个比其他人更受欢迎。对ApiDock有很好的解释。所以，object.presence相当于：</p>
+<pre><code>object.present? ? object : nil
+</code></pre>
+<p><strong>Module#delegate</strong><br>
+由于某种原因，大多数开发人员仍然很少使用它。该方法的主要目的是松耦合并遵循得墨忒耳定律。想到这个主题的好文章之一是Avdi Grimm的“Demeter：这不仅仅是一个好主意。这是法律。“另外，在应用Demeter法则的背景下，查看关于利用的简短Rails最佳实践文章。下面的代码段也描述了这一点：delegate</p>
+<pre><code>class Profile &lt; ApplicationRecord
+  belongs_to :user
+  delegate :email, to: :user
+end
+...
+profile.email # equivalent to profile.user.email
+</code></pre>
+]]></content>
+    </entry>
+</feed>
