@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-<title>Rails 5.1中form_with,form_tag,form_for的三者区别 - 氧化先生的个人博客</title>
+<title>免费上云 《薅尽腾讯云羊毛》系列之D监控  - 氧化先生的个人博客</title>
 <meta name="description" content="道可道 非常道 名可名 非常名">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -142,125 +142,68 @@
                     <div class="col-12 col-lg-10">
                       <div class="layout-post-main m-right m-md-right">
                         <div class="layout-post-header">
-                          <h1 class="layout-post-title">Rails 5.1中form_with,form_tag,form_for的三者区别</h1>
+                          <h1 class="layout-post-title">免费上云 《薅尽腾讯云羊毛》系列之D监控 </h1>
                           <div class="layout-post-meta">
                             <div class="item">
-                               <a href="https://blog.oxida.cn/KFJ5i7-r9/" class="post--keyword"
-                                data-title="ruby" data-type="post_tag" data-term-id="39">ruby</a>
+                               <a href="https://blog.oxida.cn/sLBgX7rvm/" class="post--keyword"
+                                data-title="腾讯云" data-type="post_tag" data-term-id="39">腾讯云</a>
                               
                             </div>
                             <div class="item">
-                              <span>2018-01-07</span>
+                              <span>2020-05-24</span>
                             </div>
                           </div>
                         </div>
                         <div class="layout-post-content">
                           <div class="layout-post-item">
                             
-                            <p>Rails 5.1中，<code>form_tag</code>和<code>form_for</code>已弃用，以后将由<code>form_with</code>替换。</p>
-<p>这篇文章中，我将解释<code>form_tag</code>，<code>form_for</code>与<code>form_with</code>之间的差异，并用代码示例。</p>
-<p>以前，当你要创建表单但没有基础模型时，可以使用<code>form_tag</code>。</p>
-<pre><code>&lt;％= form_tag users_path do％&gt; 
-  &lt;％= text_field_tag：email％&gt; 
-  &lt;％= Submit_tag％&gt; 
-&lt;％end％&gt;
-</code></pre>
-<p>当你拥有模型时，使用<code>form_for</code>。</p>
-<pre><code>&lt;%= form_for @user do |form| %&gt;
-  &lt;%= form.text_field :email %&gt;
-  &lt;%= form.submit %&gt;
-&lt;% end %&gt;
-&lt;％end％&gt;
-</code></pre>
-<p>如你所见，我将<code>form_for</code>与<code>builder field helpers</code>一起使用，并没有使用<code>form_tag</code>。因此，这两种形式的语法都不同。<br>
-form_with并非是这样的，因为我们一直都在使用表单构建器。<br>
-form_with 没有模型：</p>
-<pre><code>&lt;%= form_with url: users_path do |form| %&gt;
-  &lt;%= form.text_field :email %&gt;
-  &lt;%= form.submit %&gt;
-&lt;% end %&gt;
-</code></pre>
-<p><code>form_with</code>与<strong>模型</strong>:</p>
-<pre><code>&lt;%= form_with model: @user do |form| %&gt;
-  &lt;%= form.text_field :email %&gt;
-  &lt;%= form.submit %&gt;
-&lt;% end %&gt;
-</code></pre>
-<p>但你设置模型的参数时，<code>scope</code>和<code>URL</code>会自动从中<strong>派生</strong>。此行为类似于<code>form_for</code>。</p>
-<p><strong>自动ID和类消失了</strong></p>
-<p><code>form_tag</code>和<code>form_for</code>为表单字段生成自动ID。 <code>form_for</code>也会对表单进行处理。</p>
-<pre><code>&lt;%= form_for User.new do |form| %&gt;
-  &lt;%= form.text_field :email %&gt;
-&lt;% end %&gt;
-</code></pre>
-<p>产生：</p>
-<pre><code>&lt;form class=&quot;new_user&quot; id=&quot;new_user&quot; action=&quot;/users&quot; ...&gt;
-  ...
-  &lt;input type=&quot;text&quot; name=&quot;user[email]&quot; id=&quot;user_email&quot; /&gt;
-&lt;/form&gt;
-</code></pre>
-<p>使用<code>form_with</code>，你必须手动指定所有ID和类：</p>
-<pre><code>&lt;%= form_with model: @user do |form| %&gt;
-  &lt;%= form.text_field :name %&gt;
-  &lt;%= form.text_field :email, id: :email, class: :email %&gt;
-&lt;% end %&gt;
-</code></pre>
-<p>产生：</p>
-<pre><code>&lt;form action=&quot;/users&quot; ...&gt;
-  ...
-  &lt;input type=&quot;text&quot; name=&quot;user[name]&quot; /&gt;
-  &lt;input id=&quot;email&quot; class=&quot;email&quot; type=&quot;text&quot; name=&quot;user[email]&quot; /&gt;  &lt;/form&gt;
-</code></pre>
-<p>如果要使标签起作用，不要忘记为表单字段指定ID。</p>
-<pre><code>&lt;%= form_with model: @user do |form| %&gt;
-  &lt;%= form.label :name %&gt;
-  &lt;%= form.text_field :name, id: :user_name %&gt;
-&lt;% end %&gt;
-</code></pre>
+                            <p class="with-img"><img src="https://blog.oxida.cn/post-images/5ZtjwN5CD.png"
+                                class="attachment-full size-full wp-post-image" alt="免费上云 《薅尽腾讯云羊毛》系列之D监控 " /></p>
+                            
+                            <h1 id="简介">简介</h1>
+<h2 id="什么是d监控">什么是D监控？</h2>
+<p>D 监控是 DNSPod 提供的网站宕机监测服务，高效率探测，每分钟探测50万网站可用性。海量存储，完善保存历史数据。精准告警，实时准确通知用户变动的信息。</p>
 <blockquote>
-<p>更新：从Rails 5.2开始，form_with将自动生成id，因此不再需要手动指定。</p>
+<p>DNSPod 是腾讯收购的，也算属于腾讯云的，有提供免费额度。开整！</p>
 </blockquote>
-<p><strong>表单ID和类属性不再包装</strong><br>
-之前：</p>
-<pre><code>&lt;%= form_for @user, html: { id: :custom_id, class: :custom_class } do |form| %&gt;
-&lt;% end %&gt;
-</code></pre>
-<p>之后：</p>
-<pre><code>&lt;%= form_for @user, html: { id: :custom_id, class: :custom_class } do |form| %&gt;
-&lt;% end %&gt;
-</code></pre>
-<p><strong>表单字段不必与模型属性相对应</strong></p>
-<p>之前：</p>
-<pre><code>&lt;%= form_for @user do |form| %&gt;
-  &lt;%= form.text_field :email %&gt;
-  &lt;%= check_box_tag :send_welcome_email %&gt;
-&lt;% end %&gt;
-</code></pre>
-<p>之后：</p>
-<pre><code>&lt;%= form_with model: @user, local: true do |form| %&gt;
-  &lt;%= form.text_field :email %&gt;
-  &lt;%= form.check_box :send_welcome_email %&gt;
-  &lt;%= form.submit %&gt;
-&lt;% end %&gt;
-</code></pre>
-<p>请注意，在后一个示例中，<code>send_welcome_email</code>的作用域将为User控制器参数的中：</p>
-<p><code>params[:user][:send_welcome_email]</code></p>
-<p>所以，如果需要，使用check_box_tag而不是form.check_box。</p>
-<p><strong>默认情况下，所有表单都是远程的</strong></p>
-<p>这个变化对我来说是最令我兴奋的。默认情况下，由<code>form_with</code>生成的所有表单都将由<code>XHR（Ajax）</code>请求提交。无需指定<code>remote：true</code>，就像使用<code>form_tag</code>和<code>form_for</code>一样。</p>
-<p>我喜欢这个功能，因为它发送消息。多亏了<code>Turbolinks</code>，（默认）几乎所有GET请求都是XHR请求。多亏了form_with，这也可以成为表单的现实。只需要做一点工作（创建一个JavaScript响应模板），就可以消除所有整页刷新。</p>
-<p>但是，如果要禁用远程表单，则可以使用<code>local：true</code>来完成。</p>
-<pre><code>&lt;%= form_with model: @user, local: true %&gt;
-&lt;% end %&gt;
-</code></pre>
-<p>我没有在这篇文章中介绍所有内容，但是它足以让你开始使用form_with，因此不必再使用<code>form_tag</code>和<code>form_fo</code>r（无论怎么样它们都会被删除）。另外，可以阅读form_with的文档。</p>
+<h2 id="操作步骤">操作步骤：</h2>
+<p>1.登录 <a href="https://www.dnspod.cn/Products/Monitor">DNSPod 官网</a>，进入控制台，选择【D监控】—&gt;【实时监控】，跳转到 <a href="https://monitor.dnspod.cn/#/monitors">【D监控】控制台</a>.</p>
+<figure data-type="image" tabindex="1"><img src="https://blog.oxida.cn/post-images/1590290561966.png" alt="" loading="lazy"></figure>
+<p>2.单击【添加监控】，这里你可以选择【域名监控】与【URL监控】。<br>
+域名监控：需要在腾讯云或者 DNSPod 添加解析的域名，才会在这里有显示。<br>
+URL监控：如果你的域名解析并没有在腾讯云或者 DNSPod 添加解析，选择此项。</p>
+<p>域名监控：下拉选项，选择你的主域名和需要监控的子域名。<br>
+<img src="https://blog.oxida.cn/post-images/1590290814880.png" alt="" loading="lazy"></p>
+<p>URL监控：填写需要监控的URL地址即可。<br>
+<img src="https://blog.oxida.cn/post-images/1590290930883.png" alt="" loading="lazy"></p>
+<p>创建成功后，你就可以查看，相关信息了。<br>
+<img src="https://blog.oxida.cn/post-images/1590291047953.png" alt="" loading="lazy"></p>
+<h2 id="监控设置说明">监控设置说明</h2>
+<figure data-type="image" tabindex="2"><img src="https://blog.oxida.cn/post-images/1590291160140.png" alt="" loading="lazy"></figure>
+<p>监控节点:免费提供三个监控节点，如果需要更多的话，就需要购买了，不符合本系列宗旨，所以这里就不说明了。<br>
+监控频率:免费提供 10 分钟 / 次，没法改。<br>
+监控任务:设置监控的主机头，端口和路径等。还是满可以的，比如只监控一个网站下的一个页面，或者说监控其他端口，如http的80端口，或者https的443端口。<br>
+切换规则：意思是检测到你的网站无法访问了，那么设置一个规则，出现这个情况时，应该如何处理。参考：<a href="https://support.dnspod.cn/Kb/showarticle/tsid/179">D监控切换规则</a><br>
+通知设置：也就是出问题了，如何用那种方式通知到你。如下图：</p>
+<figure data-type="image" tabindex="3"><img src="https://blog.oxida.cn/post-images/1590291680820.png" alt="" loading="lazy"></figure>
+<p>通知方式：邮件和短信都勾上，反正不要钱。<br>
+通知策略：也就是如果单单你一个人维护的话，可以添加子账号等形式，一同通知了。具体查看 <a href="https://support.dnspod.cn/Kb/showarticle/tsid/22/">域名共享管理</a>.<br>
+通知其他联系人: 选择不了，不用管。<br>
+高级功能：</p>
+<ul>
+<li>语音告警：打电话给你</li>
+<li>HTTP 4XX 应答告警：出现4XX错误的时候，比如400、401、403、404、412、417什么的，也通知你。</li>
+<li>回调URL：免费的选择不了。</li>
+<li>回调密钥：免费的选择不了。</li>
+<li>通知备注：除了报警信息的内容，还要通知你什么事情。比如。叫爸爸！（逃~）</li>
+</ul>
 
                           </div>
                         </div>
                         <div class="layout-post-social">
                           <div class="item reader">
-                            <div id="/post/rails-51-zhong-form_withform_tagform_for-de-san-zhe-qu-bie/" class="leancloud-visitors view"
-                              data-flag-title="Rails 5.1中form_with,form_tag,form_for的三者区别">
+                            <div id="/post/5ZtjwN5CD/" class="leancloud-visitors view"
+                              data-flag-title="免费上云 《薅尽腾讯云羊毛》系列之D监控 ">
                               <span class="post-meta-item-text">阅读 </span>
                               <span class="leancloud-visitors-count"></span>
                             </div>
@@ -275,31 +218,8 @@ form_with 没有模型：</p>
                               <div class="card-content col-12">
                                 <div class="card-body">
                                   <div class="header">
-                                    <a href="https://blog.oxida.cn/teng-xun-mysql-shu-ju-ku-ji-chu-ban-wu-fa-shang-chuan-2048kb-da-xiao-sql-wen-jian-wen-ti/" class="title">
-                                      <h4>腾讯Mysql数据库基础版无法上传2048kb大小sql文件问题</h4>
-                                    </a>
-                                  </div>
-                                  <div class="inner">
-                                    <div class="abstract">
-                                      
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="card-footer">
-                                  <div class="item"><span>上一篇</span></div>
-                                  <div class="item">2018-03-15</div>
-                                </div>
-                              </div>
-                              
-                            </div>
-
-                            <div class="post-card row">
-                              
-                              <div class="card-content col-12">
-                                <div class="card-body">
-                                  <div class="header">
-                                    <a href="https://blog.oxida.cn/ruby-zhong-map-select-collect-inject-detect-he-each-de-qu-bie/" class="title">
-                                      <h4>ruby中map, select, collect, inject, detect 和each的区别</h4>
+                                    <a href="https://blog.oxida.cn/rX8SBuFD/" class="title">
+                                      <h4>免费上云 《薅尽腾讯云羊毛》系列之证书监控 SSLPod</h4>
                                     </a>
                                   </div>
                                   <div class="inner">
@@ -310,12 +230,11 @@ form_with 没有模型：</p>
                                 </div>
                                 <div class="card-footer">
                                   <div class="item"><span>下一篇</span></div>
-                                  <div class="item">2017-09-13</div>
+                                  <div class="item">2020-05-24</div>
                                 </div>
                               </div>
                               
                             </div>
-
                             
                           </div>
                         </div>
@@ -328,7 +247,16 @@ form_with 没有模型：</p>
                     <div class="col-12 col-lg-2 d-none d-lg-block">
                       <div class="layout-post-sidebar">
                         <div class="layout-sidebar-item">
-                          
+                          <ul class="markdownIt-TOC">
+<li><a href="#%E7%AE%80%E4%BB%8B">简介</a>
+<ul>
+<li><a href="#%E4%BB%80%E4%B9%88%E6%98%AFd%E7%9B%91%E6%8E%A7">什么是D监控？</a></li>
+<li><a href="#%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4">操作步骤：</a></li>
+<li><a href="#%E7%9B%91%E6%8E%A7%E8%AE%BE%E7%BD%AE%E8%AF%B4%E6%98%8E">监控设置说明</a></li>
+</ul>
+</li>
+</ul>
+
                         </div>
                       </div>
                     </div>

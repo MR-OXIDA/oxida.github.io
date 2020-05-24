@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.oxida.cn</id>
     <title>氧化先生的个人博客</title>
-    <updated>2020-05-23T16:39:57.845Z</updated>
+    <updated>2020-05-24T03:52:20.256Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.oxida.cn"/>
     <link rel="self" href="https://blog.oxida.cn/atom.xml"/>
@@ -10,6 +10,51 @@
     <logo>https://blog.oxida.cn/images/avatar.png</logo>
     <icon>https://blog.oxida.cn/favicon.ico</icon>
     <rights>All rights reserved 2020, 氧化先生的个人博客</rights>
+    <entry>
+        <title type="html"><![CDATA[免费上云 《薅尽腾讯云羊毛》系列之D监控 ]]></title>
+        <id>https://blog.oxida.cn/5ZtjwN5CD/</id>
+        <link href="https://blog.oxida.cn/5ZtjwN5CD/">
+        </link>
+        <updated>2020-05-24T03:09:45.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="简介">简介</h1>
+<h2 id="什么是d监控">什么是D监控？</h2>
+<p>D 监控是 DNSPod 提供的网站宕机监测服务，高效率探测，每分钟探测50万网站可用性。海量存储，完善保存历史数据。精准告警，实时准确通知用户变动的信息。</p>
+<blockquote>
+<p>DNSPod 是腾讯收购的，也算属于腾讯云的，有提供免费额度。开整！</p>
+</blockquote>
+<h2 id="操作步骤">操作步骤：</h2>
+<p>1.登录 <a href="https://www.dnspod.cn/Products/Monitor">DNSPod 官网</a>，进入控制台，选择【D监控】—&gt;【实时监控】，跳转到 <a href="https://monitor.dnspod.cn/#/monitors">【D监控】控制台</a>.</p>
+<figure data-type="image" tabindex="1"><img src="https://blog.oxida.cn/post-images/1590290561966.png" alt="" loading="lazy"></figure>
+<p>2.单击【添加监控】，这里你可以选择【域名监控】与【URL监控】。<br>
+域名监控：需要在腾讯云或者 DNSPod 添加解析的域名，才会在这里有显示。<br>
+URL监控：如果你的域名解析并没有在腾讯云或者 DNSPod 添加解析，选择此项。</p>
+<p>域名监控：下拉选项，选择你的主域名和需要监控的子域名。<br>
+<img src="https://blog.oxida.cn/post-images/1590290814880.png" alt="" loading="lazy"></p>
+<p>URL监控：填写需要监控的URL地址即可。<br>
+<img src="https://blog.oxida.cn/post-images/1590290930883.png" alt="" loading="lazy"></p>
+<p>创建成功后，你就可以查看，相关信息了。<br>
+<img src="https://blog.oxida.cn/post-images/1590291047953.png" alt="" loading="lazy"></p>
+<h2 id="监控设置说明">监控设置说明</h2>
+<figure data-type="image" tabindex="2"><img src="https://blog.oxida.cn/post-images/1590291160140.png" alt="" loading="lazy"></figure>
+<p>监控节点:免费提供三个监控节点，如果需要更多的话，就需要购买了，不符合本系列宗旨，所以这里就不说明了。<br>
+监控频率:免费提供 10 分钟 / 次，没法改。<br>
+监控任务:设置监控的主机头，端口和路径等。还是满可以的，比如只监控一个网站下的一个页面，或者说监控其他端口，如http的80端口，或者https的443端口。<br>
+切换规则：意思是检测到你的网站无法访问了，那么设置一个规则，出现这个情况时，应该如何处理。参考：<a href="https://support.dnspod.cn/Kb/showarticle/tsid/179">D监控切换规则</a><br>
+通知设置：也就是出问题了，如何用那种方式通知到你。如下图：</p>
+<figure data-type="image" tabindex="3"><img src="https://blog.oxida.cn/post-images/1590291680820.png" alt="" loading="lazy"></figure>
+<p>通知方式：邮件和短信都勾上，反正不要钱。<br>
+通知策略：也就是如果单单你一个人维护的话，可以添加子账号等形式，一同通知了。具体查看 <a href="https://support.dnspod.cn/Kb/showarticle/tsid/22/">域名共享管理</a>.<br>
+通知其他联系人: 选择不了，不用管。<br>
+高级功能：</p>
+<ul>
+<li>语音告警：打电话给你</li>
+<li>HTTP 4XX 应答告警：出现4XX错误的时候，比如400、401、403、404、412、417什么的，也通知你。</li>
+<li>回调URL：免费的选择不了。</li>
+<li>回调密钥：免费的选择不了。</li>
+<li>通知备注：除了报警信息的内容，还要通知你什么事情。比如。叫爸爸！（逃~）</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[免费上云 《薅尽腾讯云羊毛》系列之证书监控 SSLPod]]></title>
         <id>https://blog.oxida.cn/rX8SBuFD/</id>
@@ -750,59 +795,6 @@ E585BBA1 2538C270 E2E857C2 194283CA
 <p>//安装后会自动把字元变为中文,可以在help裡的Language设定繁体,日语或者英语</p>
 <p>安装过程亲测有效,软件版本为sublime text3</p>
 <p>以上!</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[5个Ruby on Rails不常见的提示]]></title>
-        <id>https://blog.oxida.cn/5-ge-ruby-on-rails-bu-chang-jian-de-ti-shi/</id>
-        <link href="https://blog.oxida.cn/5-ge-ruby-on-rails-bu-chang-jian-de-ti-shi/">
-        </link>
-        <updated>2019-03-15T04:16:55.000Z</updated>
-        <content type="html"><![CDATA[<blockquote>
-<p>自从我开始使用Ruby on Rails以来，经过几年的使用，我不禁想知道我为什么能在Ruby的世界中发现一些新东西。</p>
-</blockquote>
-<p>Ruby很少使用必备的方法，主要是“语法糖”，虽然它很不规范，但它会使你的代码更清晰。不过有些时候可能只是新的Ruby或Rails版本出现了新的变化。</p>
-<p><strong>Hash#dig</strong><br>
-我使用的第一个Ruby版本是1.8，但是这个方法是在2.3中引入的。<br>
-我做了多少次这样的事情：</p>
-<pre><code>if params[:user] &amp;&amp; params[:user][:address] &amp;&amp; params[:user][:address][:somewhere_deep]
-</code></pre>
-<p>后来才发现，对于Hash对象的&amp;，可以将其dig视为一种安全的导航操作符。所以现在你可以重写这样的东西：</p>
-<pre><code>if params.dig(:user, :address, :somewhere_deep)
-</code></pre>
-<p><strong>Object#presence_in</strong></p>
-<p>但你实际上不需要检查包含布尔运算的结果时，它允许你使用单个方法来调用替换条件（通常是三元运算符），但是检查对象本身。例如，你的代码如下所示：</p>
-<pre><code>sort_options = [:by_date, :by_title, :by_author]
-...
-sort = sort_options.include?(params[:sort]) 
-  ? params[:sort] 
-  : :by_date
-
-# Another option
-sort = (sort_options.include?(params[:sort]) &amp;&amp; params[:sort]) || :by_date
-</code></pre>
-<p>这看起来不是更好吗？</p>
-<pre><code>params [：sort] .presence_in（sort_options）|| ：by_date
-</code></pre>
-<p><strong>Module#alias_attribute</strong></p>
-<p>好吧，当我使用遗留数据库处理项目时，我发现这非常有用。它有一个表奇怪的列名一样SERNUM_0，ITMDES1_0等。我们将此表映射到ActiveRecord模型，而不是在其上编写查询和范围WeirdTable.where(SERNUM_0: ‘123’)，我们开始使用alias_attribute它，因为它不仅生成getter和setter（以及谓词方法），而且还在查询中工作：</p>
-<pre><code>alias_attribute：name，：ITMDES1_0 
-... 
-scope：by_name， - &gt;（name）{where（name：name）}
-</code></pre>
-<p><strong>Object#presence</strong></p>
-<p>这个比其他人更受欢迎。对ApiDock有很好的解释。所以，object.presence相当于：</p>
-<pre><code>object.present? ? object : nil
-</code></pre>
-<p><strong>Module#delegate</strong><br>
-由于某种原因，大多数开发人员仍然很少使用它。该方法的主要目的是松耦合并遵循得墨忒耳定律。想到这个主题的好文章之一是Avdi Grimm的“Demeter：这不仅仅是一个好主意。这是法律。“另外，在应用Demeter法则的背景下，查看关于利用的简短Rails最佳实践文章。下面的代码段也描述了这一点：delegate</p>
-<pre><code>class Profile &lt; ApplicationRecord
-  belongs_to :user
-  delegate :email, to: :user
-end
-...
-profile.email # equivalent to profile.user.email
-</code></pre>
 ]]></content>
     </entry>
 </feed>
