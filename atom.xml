@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.oxida.cn</id>
-    <title>氧化先生的个人博客</title>
-    <updated>2020-07-19T06:37:19.439Z</updated>
+    <title>氧化先生</title>
+    <updated>2020-07-19T08:08:12.631Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.oxida.cn"/>
     <link rel="self" href="https://blog.oxida.cn/atom.xml"/>
     <subtitle>道可道 非常道 名可名 非常名</subtitle>
     <logo>https://blog.oxida.cn/images/avatar.png</logo>
     <icon>https://blog.oxida.cn/favicon.ico</icon>
-    <rights>All rights reserved 2020, 氧化先生的个人博客</rights>
+    <rights>All rights reserved 2020, 氧化先生</rights>
     <entry>
         <title type="html"><![CDATA[腾讯云对外发布文档规范]]></title>
         <id>https://blog.oxida.cn/ll9p23ohh/</id>
